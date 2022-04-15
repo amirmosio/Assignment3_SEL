@@ -50,18 +50,18 @@
 </td>
 <td class="coverageStat">
   <span class="percent">
-    66.7%
+    100%
   </span>
   <span class="absValue">
-    (4/ 6)
+    (6/ 6)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    73.9%
+    100%
   </span>
   <span class="absValue">
-    (17/ 23)
+    (23/ 23)
   </span>
 </td>
 </tr>
@@ -103,12 +103,12 @@
 <i>29</i>&nbsp;
 <i>30</i>&nbsp;	//@Override
 <i>31</i>&nbsp;	public User findById_old(Integer personId) {
-<b class="nc"><i>32</i>&nbsp;		Person found = personDao.findOne(personId);</b>
+<b class="fc"><i>32</i>&nbsp;		Person found = personDao.findOne(personId);</b>
 <i>33</i>&nbsp;
-<b class="nc"><i>34</i>&nbsp;		if (found == null) {</b>
-<b class="nc"><i>35</i>&nbsp;			throw new UserNotFoundException(&quot;not found user&quot;, personId);</b>
+<b class="fc"><i>34</i>&nbsp;		if (found == null) {</b>
+<b class="fc"><i>35</i>&nbsp;			throw new UserNotFoundException(&quot;not found user&quot;, personId);</b>
 <i>36</i>&nbsp;		}
-<b class="nc"><i>37</i>&nbsp;		return transformer.toUserDomain(found);</b>
+<b class="fc"><i>37</i>&nbsp;		return transformer.toUserDomain(found);</b>
 <i>38</i>&nbsp;	}
 <i>39</i>&nbsp;	
 <i>40</i>&nbsp; 
@@ -129,8 +129,8 @@
 <i>55</i>&nbsp;
 <i>56</i>&nbsp;	@Override
 <i>57</i>&nbsp;	public User save(User user) {
-<b class="nc"><i>58</i>&nbsp;		Person saved = personDao.save(transformer.toUserEntity(user));</b>
-<b class="nc"><i>59</i>&nbsp;		return transformer.toUserDomain(saved);</b>
+<b class="fc"><i>58</i>&nbsp;		Person saved = personDao.save(transformer.toUserEntity(user));</b>
+<b class="fc"><i>59</i>&nbsp;		return transformer.toUserDomain(saved);</b>
 <i>60</i>&nbsp;	}
 <i>61</i>&nbsp;
 <i>62</i>&nbsp;	@Override
@@ -148,7 +148,7 @@
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2022-04-15 19:04</div>
+    <div style="float:right;">generated on 2022-04-15 20:17</div>
 </div>
 </body>
 </html>

@@ -6,18 +6,24 @@ import org.junit.Test;
 
 public class PersonTest {
 
-	@Test
-	public void test_person_default_constructor() {
-		Person testClass = new Person();
-		
-		testClass.setmName("mName1");
-		assertEquals("mName1", testClass.getmName());
+    @Test
+    public void test_person_default_constructor() {
+        Person testClass = new Person();
 
-		testClass.setfName("fName1");
-		assertEquals("fName1", testClass.getfName());
+        testClass.setmName("mName1");
+        assertEquals("mName1", testClass.getmName());
 
-		testClass.setlName("lName1");
-		assertEquals("lName1", testClass.getlName());
-	}
+        testClass.setfName("fName1");
+        assertEquals("fName1", testClass.getfName());
+
+        testClass.setlName("lName1");
+        assertEquals("lName1", testClass.getlName());
+
+        testClass.setCompanyName("cName1");
+        assertEquals("cName1", testClass.getCompanyName());
+
+        testClass.setPersonId(36578);
+        assertEquals(36578, testClass.getPersonId());
+    }
 
 }
